@@ -19,8 +19,8 @@ receta.config(function ($routeProvider) {
 
 
 
-// receta.controller('RecipesController', ['$scope', function($scope){
+receta.controller('RecipesController', ['$scope', function($scope){
 
 
-// }])
+}])
 
