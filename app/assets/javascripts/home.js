@@ -1,13 +1,18 @@
-receta = angular.module('receta',[])
+var receta = angular.module('receta', ['ngRoute']);
 
-app.config([ '$routeProvider', ($routeProvider)
-    $routeProvider
+
+receta.config(function ($routeProvider) {
+
+  $routeProvider
+
       .when('/',
         templateUrl: "index.html"
         controller: 'SomeController'
       )
+
       .when('/recipes/new',
         templateUrl: "new.html"
         controller: 'SomeOtherController'
       )
-])
+
+});
