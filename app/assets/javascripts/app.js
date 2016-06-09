@@ -19,7 +19,7 @@ receta.config(function ($routeProvider) {
 
 
 
-receta.controller('RecipesController', ['$scope', 'templates' function($scope, templates){
+receta.controller('RecipesController', ['$scope', function($scope){
 
 
 }])
