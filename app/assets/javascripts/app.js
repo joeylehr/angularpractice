@@ -1,0 +1,26 @@
+var receta = angular.module('receta', ['templates', 'ngRoute', 'controllers']);
+
+
+receta.config(function ($routeProvider) {
+
+  $routeProvider
+
+      .when('/',
+        templateUrl: "index.html"
+        controller: 'RecipesController'
+      )
+
+      // .when('/recipes/new',
+      //   templateUrl: "new.html"
+      //   controller: 'SomeOtherController'
+      // )
+
+});
+
+
+
+receta.controller('RecipesController', ['$scope', function($scope){
+
+
+}])
+
