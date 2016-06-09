@@ -1,14 +1,14 @@
-var receta = angular.module('receta', ['templates', 'ngRoute', 'controllers']);
+var receta = angular.module('receta', ['ngRoute', 'templates']);
 
 
 receta.config(function ($routeProvider) {
 
   $routeProvider
 
-      .when('/',
-        templateUrl: "index.html"
+      .when('/', {
+        templateUrl: 'index.html',
         controller: 'RecipesController'
-      )
+      })
 
       // .when('/recipes/new',
       //   templateUrl: "new.html"
